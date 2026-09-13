@@ -1,36 +1,23 @@
-module tb_half_adder;
-
-reg A;
-reg B;
-
-wire Sum;
-wire Carry;
-
-half_adder uut (
-    .A(A),
-    .B(B),
-    .Sum(Sum),
-    .Carry(Carry)
-);
-
-initial begin
-
-    $display("A B | Sum Carry");
-    $display("--------------");
-
-    A = 0; B = 0; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
-    A = 0; B = 1; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
-    A = 1; B = 0; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
-    A = 1; B = 1; #10;
-    $display("%b %b |  %b    %b", A, B, Sum, Carry);
-
+module tb;
+  reg A,B;
+  wire Sum, Carry;
+  
+  half_adder abc(A, B, Sum, Carry);
+  
+  initial begin
+    $monitor("Time = %0t, A = %b, B = %b, Sum = %b, Carry =%b", $time, A, B, Sum, Carry);
+    for(int i = 0; i < 5; i++)
+      begin
+        {A, B} = i;
+        #1;
+      end
+    #1;
     $finish;
-
-end
+  end
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(0,tb);
+  end
 endmodule
+
+    
