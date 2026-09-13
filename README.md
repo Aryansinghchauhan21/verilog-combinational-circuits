@@ -57,7 +57,7 @@ The Half Adder was tested for all four possible combinations of the two 1-bit in
 * EDA Playground / Verilog Simulator
 * GitHub
 
-** Learning Objectives**
+**Learning Objectives**
 
 * Understand basic combinational logic
 * Implement digital circuits using Verilog
