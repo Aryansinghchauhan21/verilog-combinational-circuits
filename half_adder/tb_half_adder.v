@@ -5,7 +5,7 @@ module tb;
   half_adder abc(A, B, Sum, Carry);
   
   initial begin
-    $monitor("Time = %0t, A = %b, B = %b, Sum = %b, Carry =%b", $time, A, B, Sum, Carry);
+    $monitor("Time = %0t, A = %b, B = %b, Sum = %b, Carry = %b", $time, A, B, Sum, Carry);
     for(int i = 0; i < 5; i++)
       begin
         {A, B} = i;
