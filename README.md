@@ -1,4 +1,4 @@
-Verilog Combinational Circuits
+**Verilog Combinational Circuits**
 
 A collection of basic digital circuits designed and simulated using Verilog HDL.
 
