@@ -1,4 +1,4 @@
-module(a,b, diff, borr);
+module half_sub(a,b, diff, borr);
   input a,b;
   output diff, borr;
 
