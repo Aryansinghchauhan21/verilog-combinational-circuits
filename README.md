@@ -26,8 +26,8 @@ A Half Adder performs binary addition of two 1-bit inputs.
 **Logic**
 
 text
-Sum   = A XOR B
-Carry = A AND B
+Sum   = A XOR B;
+Carry = A AND B;
 
 
 **Truth Table**
