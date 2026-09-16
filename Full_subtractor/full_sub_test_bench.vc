@@ -3,7 +3,7 @@ module tb;
   wire diff, bout;
 
   full_sub abc(a,b,bin,diff,bout);
-
+a
 
   initial begin
     $monitor("Time =%0t, a = %b, b = %b, bin = %b, diff = %b, bout =%b", $time, a, b, bin, diff, bout);
